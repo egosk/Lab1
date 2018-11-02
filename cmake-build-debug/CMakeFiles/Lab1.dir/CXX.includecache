@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/emila/Desktop/Projects/Lab1/character.h
+iostream
+-
+
+C:/Users/emila/Desktop/Projects/Lab1/main.cpp
+iostream
+-
+character.h
+C:/Users/emila/Desktop/Projects/Lab1/character.h
+
