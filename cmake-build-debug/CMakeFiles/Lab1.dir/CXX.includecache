@@ -6,7 +6,35 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/emila/Desktop/Projects/Lab1/character.cpp
+iostream
+-
+character.h
 C:/Users/emila/Desktop/Projects/Lab1/character.h
+
+C:/Users/emila/Desktop/Projects/Lab1/character.h
+iostream
+-
+inventory.h
+C:/Users/emila/Desktop/Projects/Lab1/inventory.h
+
+C:/Users/emila/Desktop/Projects/Lab1/inventory.cpp
+iostream
+-
+vector
+-
+inventory.h
+C:/Users/emila/Desktop/Projects/Lab1/inventory.h
+
+C:/Users/emila/Desktop/Projects/Lab1/inventory.h
+iostream
+-
+item.h
+C:/Users/emila/Desktop/Projects/Lab1/item.h
+vector
+-
+
+C:/Users/emila/Desktop/Projects/Lab1/item.h
 iostream
 -
 

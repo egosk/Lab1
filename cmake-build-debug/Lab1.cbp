@@ -88,6 +88,18 @@
 		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/character.h">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/inventory.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/inventory.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/item.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/item.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>

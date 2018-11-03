@@ -3,7 +3,18 @@
 
 CMakeFiles/Lab1.dir/character.cpp.obj: ../character.cpp
 CMakeFiles/Lab1.dir/character.cpp.obj: ../character.h
+CMakeFiles/Lab1.dir/character.cpp.obj: ../inventory.h
+CMakeFiles/Lab1.dir/character.cpp.obj: ../item.h
+
+CMakeFiles/Lab1.dir/inventory.cpp.obj: ../inventory.cpp
+CMakeFiles/Lab1.dir/inventory.cpp.obj: ../inventory.h
+CMakeFiles/Lab1.dir/inventory.cpp.obj: ../item.h
+
+CMakeFiles/Lab1.dir/item.cpp.obj: ../item.cpp
+CMakeFiles/Lab1.dir/item.cpp.obj: ../item.h
 
 CMakeFiles/Lab1.dir/main.cpp.obj: ../character.h
+CMakeFiles/Lab1.dir/main.cpp.obj: ../inventory.h
+CMakeFiles/Lab1.dir/main.cpp.obj: ../item.h
 CMakeFiles/Lab1.dir/main.cpp.obj: ../main.cpp
 

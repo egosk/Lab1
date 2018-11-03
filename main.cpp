@@ -16,5 +16,10 @@ int main() {
     std::cout << "HP: " << char2->getHP() << std::endl;
     std::cout << "Name: " << char2->getName() << std::endl;
 
+    Item *it = new Item("Key", "tool", 3);
+    char2->addToInventory(*it);
+    Inventory i = char2->getInventory();
+    std::cout << "Inventory:" << i.stock[0].getName() <<std::endl;
+
     return 0;
 }

@@ -39,6 +39,14 @@ string Character::getName(){
     return name;
 };
 
+void Character::addToInventory(Item it){
+    inv.addItem(it);
+};
+
+Inventory Character::getInventory(){
+    return inv;
+};
+
 
 
 

@@ -149,6 +149,60 @@ character.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/character.cpp.s
 .PHONY : character.cpp.s
 
+inventory.obj: inventory.cpp.obj
+
+.PHONY : inventory.obj
+
+# target to build an object file
+inventory.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/inventory.cpp.obj
+.PHONY : inventory.cpp.obj
+
+inventory.i: inventory.cpp.i
+
+.PHONY : inventory.i
+
+# target to preprocess a source file
+inventory.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/inventory.cpp.i
+.PHONY : inventory.cpp.i
+
+inventory.s: inventory.cpp.s
+
+.PHONY : inventory.s
+
+# target to generate assembly for a file
+inventory.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/inventory.cpp.s
+.PHONY : inventory.cpp.s
+
+item.obj: item.cpp.obj
+
+.PHONY : item.obj
+
+# target to build an object file
+item.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/item.cpp.obj
+.PHONY : item.cpp.obj
+
+item.i: item.cpp.i
+
+.PHONY : item.i
+
+# target to preprocess a source file
+item.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/item.cpp.i
+.PHONY : item.cpp.i
+
+item.s: item.cpp.s
+
+.PHONY : item.s
+
+# target to generate assembly for a file
+item.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/item.cpp.s
+.PHONY : item.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +242,12 @@ help:
 	@echo ... character.obj
 	@echo ... character.i
 	@echo ... character.s
+	@echo ... inventory.obj
+	@echo ... inventory.i
+	@echo ... inventory.s
+	@echo ... item.obj
+	@echo ... item.i
+	@echo ... item.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
