@@ -1,25 +1,27 @@
 #include <iostream>
 #include "character.h"
+#include "menu.h"
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    Character *chara = new Character;
 
-    std::cout << "Alive: " << chara->getIsAlive() << std::endl;
-    std::cout << "HP: " << chara->getHP() << std::endl;
-    std::cout << "Name: " << chara->getName() << std::endl;
+    World *wo = new World;
+    wo->createItems();
+    //Item temp = wo->pickItem(3);
 
-    Character *char2 = new Character("Mike", 101);
+    //cout << temp.getName() <<endl;
 
-    std::cout << "Alive: " << char2->getIsAlive() << std::endl;
-    std::cout << "HP: " << char2->getHP() << std::endl;
-    std::cout << "Name: " << char2->getName() << std::endl;
 
-    Item *it = new Item("Key", "tool", 3);
-    char2->addToInventory(*it);
-    Inventory i = char2->getInventory();
-    std::cout << "Inventory:" << i.stock[0].getName() <<std::endl;
 
-    return 0;
+    Menu *men = new Menu;
+    Character ch = men->createCharacter();
+    men->action(ch, *wo);
+
+    while (men->getFinish() == false){
+       men->action(ch, *wo);
+       //bcout << "twoj inwentarz: "<< ch.getInventory().stock[1].getName() <<endl;
+
+    }
+    return 0 ;
+    //return 0;
 }

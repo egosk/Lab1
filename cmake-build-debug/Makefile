@@ -230,6 +230,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menu.obj: menu.cpp.obj
+
+.PHONY : menu.obj
+
+# target to build an object file
+menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/menu.cpp.obj
+.PHONY : menu.cpp.obj
+
+menu.i: menu.cpp.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
+world.obj: world.cpp.obj
+
+.PHONY : world.obj
+
+# target to build an object file
+world.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/world.cpp.obj
+.PHONY : world.cpp.obj
+
+world.i: world.cpp.i
+
+.PHONY : world.i
+
+# target to preprocess a source file
+world.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/world.cpp.i
+.PHONY : world.cpp.i
+
+world.s: world.cpp.s
+
+.PHONY : world.s
+
+# target to generate assembly for a file
+world.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/world.cpp.s
+.PHONY : world.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -251,6 +305,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... menu.obj
+	@echo ... menu.i
+	@echo ... menu.s
+	@echo ... world.obj
+	@echo ... world.i
+	@echo ... world.s
 .PHONY : help
 
 

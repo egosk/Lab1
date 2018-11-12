@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/emila/Desktop/Projects/Lab1/inventory.cpp" "C:/Users/emila/Desktop/Projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/inventory.cpp.obj"
   "C:/Users/emila/Desktop/Projects/Lab1/item.cpp" "C:/Users/emila/Desktop/Projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/item.cpp.obj"
   "C:/Users/emila/Desktop/Projects/Lab1/main.cpp" "C:/Users/emila/Desktop/Projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj"
+  "C:/Users/emila/Desktop/Projects/Lab1/menu.cpp" "C:/Users/emila/Desktop/Projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/menu.cpp.obj"
+  "C:/Users/emila/Desktop/Projects/Lab1/world.cpp" "C:/Users/emila/Desktop/Projects/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/world.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

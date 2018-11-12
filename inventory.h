@@ -10,8 +10,6 @@ using namespace std;
 #ifndef LAB1_INVENTORY_H
 #define LAB1_INVENTORY_H
 
-#endif //LAB1_INVENTORY_H
-
 class Inventory{
     int maxCapacity;
 
@@ -25,4 +23,9 @@ public:
     int getMaxCapacity();
     void setMaxCapacity(int max);
     void addItem(Item i);
+
 };
+
+
+#endif //LAB1_INVENTORY_H
+

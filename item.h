@@ -7,8 +7,6 @@ using namespace std;
 #ifndef LAB1_ITEM_H
 #define LAB1_ITEM_H
 
-#endif //LAB1_ITEM_H
-
 class Item {
     string name;
     string type;
@@ -32,3 +30,6 @@ public:
     void setWeight(int weight);
 
 };
+
+#endif //LAB1_ITEM_H
+

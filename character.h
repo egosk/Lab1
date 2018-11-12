@@ -9,8 +9,6 @@ using namespace std;
 #ifndef LAB1_CHARACTER_H
 #define LAB1_CHARACTER_H
 
-#endif //LAB1_CHARACTER_H
-
 class Character{
 private:
     int hp = 100; //nie wolno tu wartosci
@@ -40,4 +38,8 @@ public:
 
 
 };
+
+
+#endif //LAB1_CHARACTER_H
+
 

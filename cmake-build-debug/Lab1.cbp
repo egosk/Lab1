@@ -103,6 +103,18 @@
 		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/menu.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/menu.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/world.cpp">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/world.h">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="C:/Users/emila/Desktop/Projects/Lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
