@@ -61,7 +61,7 @@ Character Menu::createCharacter() {
 
 };
 
-    void Menu::action(Character ch, World w){
+    tuple<Character, World> Menu::action(Character ch, World w){
         char answer;
         cout << "What would you like to do with your character?" << endl;
         cout << "Collect item -  insert c and press enter." << endl;
@@ -71,8 +71,8 @@ Character Menu::createCharacter() {
         cin >> answer;
         answer = tolower(answer);
 
-        g++;
-        cout << "Wartosc g: " << g << endl;
+
+
 
 
 
@@ -114,16 +114,7 @@ Character Menu::createCharacter() {
                 else{
                     int number = answer - '0';
 
-
-                    ch.addToInventory(w.pickItem(number));
-                    //ch.addToInventory(w.pickItem(number));
-
-                    //cout << "Items in your inventory: " << endl;
-                    //for (int i = 0; i < (ch.getInventory().stock.size()); i++){
-                    //    cout << i+1 << ". " << ch.getInventory().stock[i].getName() << endl ;
-                    //}
-
-                    //ch.addToInventory(w.pickItem(number));
+                    ch.addToInventory(w.pickItem(number-1));
                 }
 
             }
@@ -152,7 +143,8 @@ Character Menu::createCharacter() {
         }
 
 
-
+        //result;
+        return result(ch, w);
     };
 
 bool Menu::checkIfCorrectInput(string in, char an){
@@ -183,3 +175,6 @@ bool Menu::getFinish(){
 }
 
 
+tuple<Character, World> Menu::result(Character characte, World worl){
+    return make_tuple(characte, worl);
+};

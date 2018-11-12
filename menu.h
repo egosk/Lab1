@@ -3,7 +3,10 @@
 //
 
 #include <iostream>
+#include <tuple>
 #include "world.h"
+
+using namespace std;
 
 
 #ifndef LAB1_MENU_H
@@ -11,12 +14,16 @@
 
 class Menu{
     bool finish  = false;
+    //tuple<Character, World> result(Character charact, World worl);
 
 public:
     int g = 0;
 
+    //struct result;
+    tuple<Character, World> result(Character characte, World worl);
+
     Character createCharacter();
-    void action(Character ch, World w);
+    tuple<Character,World> action(Character ch, World w);
     bool checkIfCorrectInput(string in, char an);
     void setFinish(bool f);
     bool getFinish();

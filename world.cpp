@@ -23,7 +23,7 @@ int World::checkHowManyItemsAvailable(vector<Item> availableItems){
 
 Item World::pickItem(int k){
     Item temp = availableItems[k];
-    availableItems.erase(availableItems.begin()+k-2);
+    availableItems.erase(availableItems.begin()+k);
     return temp;
 }
 

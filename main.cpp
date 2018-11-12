@@ -11,14 +11,16 @@ int main() {
 
     //cout << temp.getName() <<endl;
 
+    tuple<Character, World> tup1;
+
 
 
     Menu *men = new Menu;
     Character ch = men->createCharacter();
-    men->action(ch, *wo);
+    tup1 = men->action(ch, *wo);
 
     while (men->getFinish() == false){
-       men->action(ch, *wo);
+       tup1 = men->action(get<0>(tup1), get<1>(tup1));
        //bcout << "twoj inwentarz: "<< ch.getInventory().stock[1].getName() <<endl;
 
     }

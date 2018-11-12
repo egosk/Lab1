@@ -24,14 +24,6 @@ C:/Users/emila/Desktop/Projects/Lab1/item.h
 iostream
 -
 
-C:/Users/emila/Desktop/Projects/Lab1/main.cpp
-iostream
--
-character.h
-C:/Users/emila/Desktop/Projects/Lab1/character.h
-menu.h
-C:/Users/emila/Desktop/Projects/Lab1/menu.h
-
 C:/Users/emila/Desktop/Projects/Lab1/menu.cpp
 iostream
 -
@@ -42,6 +34,8 @@ C:/Users/emila/Desktop/Projects/Lab1/menu.h
 
 C:/Users/emila/Desktop/Projects/Lab1/menu.h
 iostream
+-
+tuple
 -
 world.h
 C:/Users/emila/Desktop/Projects/Lab1/world.h
