@@ -6,6 +6,7 @@ CMakeFiles/Lab1.dir/character.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/character.h
  C:/Users/emila/Desktop/Projects/Lab1/inventory.h
  C:/Users/emila/Desktop/Projects/Lab1/item.h
+ C:/Users/emila/Desktop/Projects/Lab1/monster.h
 CMakeFiles/Lab1.dir/inventory.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/inventory.cpp
  C:/Users/emila/Desktop/Projects/Lab1/inventory.h
@@ -19,6 +20,7 @@ CMakeFiles/Lab1.dir/main.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/item.h
  C:/Users/emila/Desktop/Projects/Lab1/main.cpp
  C:/Users/emila/Desktop/Projects/Lab1/menu.h
+ C:/Users/emila/Desktop/Projects/Lab1/monster.h
  C:/Users/emila/Desktop/Projects/Lab1/world.h
 CMakeFiles/Lab1.dir/menu.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/character.h
@@ -26,8 +28,13 @@ CMakeFiles/Lab1.dir/menu.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/item.h
  C:/Users/emila/Desktop/Projects/Lab1/menu.cpp
  C:/Users/emila/Desktop/Projects/Lab1/menu.h
+ C:/Users/emila/Desktop/Projects/Lab1/monster.h
  C:/Users/emila/Desktop/Projects/Lab1/world.h
+CMakeFiles/Lab1.dir/monster.cpp.obj
+ C:/Users/emila/Desktop/Projects/Lab1/monster.cpp
+ C:/Users/emila/Desktop/Projects/Lab1/monster.h
 CMakeFiles/Lab1.dir/world.cpp.obj
  C:/Users/emila/Desktop/Projects/Lab1/item.h
+ C:/Users/emila/Desktop/Projects/Lab1/monster.h
  C:/Users/emila/Desktop/Projects/Lab1/world.cpp
  C:/Users/emila/Desktop/Projects/Lab1/world.h

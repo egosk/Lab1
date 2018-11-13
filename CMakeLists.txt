@@ -3,4 +3,4 @@ project(Lab1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab1 main.cpp character.h character.cpp inventory.cpp inventory.h item.cpp item.h menu.cpp menu.h world.cpp world.h)
+add_executable(Lab1 main.cpp character.h character.cpp inventory.cpp inventory.h item.cpp item.h menu.cpp menu.h world.cpp world.h monster.cpp monster.h)

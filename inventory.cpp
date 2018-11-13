@@ -11,6 +11,7 @@ using namespace std;
 
 Inventory::Inventory(){
     maxCapacity = 10;
+    Inventory::weapons.push_back(Item("Bare hands", "coldsteel", 1, true, 5));
 };
 
 Inventory::Inventory(int max){
@@ -26,6 +27,9 @@ void Inventory::setMaxCapacity(int max){
 
 void Inventory::addItem(Item i){
     stock.push_back(i);
+    if (i.getIsWeapon() == true){
+        weapons.push_back(i);
+    }
 };
 
 

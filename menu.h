@@ -14,20 +14,14 @@ using namespace std;
 
 class Menu{
     bool finish  = false;
-    //tuple<Character, World> result(Character charact, World worl);
 
 public:
-    int g = 0;
-
-    //struct result;
     tuple<Character, World> result(Character characte, World worl);
 
     Character createCharacter();
     tuple<Character,World> action(Character ch, World w);
     bool checkIfCorrectInput(string in, char an);
-    void setFinish(bool f);
     bool getFinish();
-    bool wantToQuit(char ch);
 };
 
 

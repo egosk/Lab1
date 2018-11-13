@@ -3,6 +3,8 @@
 //
 #include <iostream>
 #include "inventory.h"
+#include "monster.h"
+
 using namespace std;
 
 
@@ -15,10 +17,13 @@ private:
     string name;
     bool isAlive;
     Inventory inv;
+    int strength;
 
 public:
     Character();
     Character(string nm, int health);
+
+    Monster attack(Monster mon, Item weapon);
 
     void setIsAlive(bool al);
     bool getIsAlive();
@@ -33,6 +38,8 @@ public:
 
     void addToInventory(Item it);
     Inventory getInventory();
+
+    void getDamage(int damage);
 
 
 

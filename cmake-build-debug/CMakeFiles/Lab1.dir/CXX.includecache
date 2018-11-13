@@ -6,45 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/emila/Desktop/Projects/Lab1/character.h
-iostream
--
-inventory.h
-C:/Users/emila/Desktop/Projects/Lab1/inventory.h
+C:/Users/emila/Desktop/Projects/Lab1/monster.cpp
+monster.h
+C:/Users/emila/Desktop/Projects/Lab1/monster.h
 
-C:/Users/emila/Desktop/Projects/Lab1/inventory.h
+C:/Users/emila/Desktop/Projects/Lab1/monster.h
 iostream
 -
-item.h
-C:/Users/emila/Desktop/Projects/Lab1/item.h
-vector
--
-
-C:/Users/emila/Desktop/Projects/Lab1/item.h
-iostream
--
-
-C:/Users/emila/Desktop/Projects/Lab1/menu.cpp
-iostream
--
-character.h
-C:/Users/emila/Desktop/Projects/Lab1/character.h
-menu.h
-C:/Users/emila/Desktop/Projects/Lab1/menu.h
-
-C:/Users/emila/Desktop/Projects/Lab1/menu.h
-iostream
--
-tuple
--
-world.h
-C:/Users/emila/Desktop/Projects/Lab1/world.h
-
-C:/Users/emila/Desktop/Projects/Lab1/world.h
-iostream
--
-vector
--
-item.h
-C:/Users/emila/Desktop/Projects/Lab1/item.h
 

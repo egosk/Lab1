@@ -4,10 +4,12 @@
 
 #include "item.h"
 
-Item::Item(string n, string t, int w){
+Item::Item(string n, string t, int w, bool iw, int at){
   name = n;
   type = t;
   weight = w;
+  isWeapon = iw;
+  attack = at;
 };
 
 string Item::getName(){
@@ -32,4 +34,20 @@ void Item::setType(string type) {
 
 void Item::setWeight(int weight) {
     Item::weight = weight;
+}
+
+bool Item::getIsWeapon() const {
+    return isWeapon;
+}
+
+void Item::setIsWeapon(bool isWeapon) {
+    Item::isWeapon = isWeapon;
+}
+
+int Item::getAttack() const {
+    return attack;
+}
+
+void Item::setAttack(int attack) {
+    Item::attack = attack;
 }

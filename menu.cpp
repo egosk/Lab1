@@ -24,13 +24,7 @@ Character Menu::createCharacter() {
         cout << "Please choose correct letter : a, b or q" << endl;
         cin >> answer;
         answer = tolower(answer);
-
     }
-
-   // switch (answer){
-  //      case 'a':
-   // };
-
 
     if (answer == 'a') {
         cout << "Creating character with your parameters..." << endl;
@@ -49,15 +43,10 @@ Character Menu::createCharacter() {
         cout << "This is your character: " << endl << "Name: " << char1->getName() << endl << "HP: " << char1->getHP()
              << endl;
         return *char1;
-
-    } else if (answer == 'q') {
-        //break;
-        //Character *char1 = new Character();
-        //setFinish(true);
-        //return *char1;
+    }
+    else if (answer == 'q') {
         exit(0);
     }
-
 
 };
 
@@ -71,17 +60,10 @@ Character Menu::createCharacter() {
         cin >> answer;
         answer = tolower(answer);
 
-
-
-
-
-
-
         while (checkIfCorrectInput("cfiq", answer)== false){
             cout << "Please choose correct letter : c, f, i or q" <<endl;
             cin >> answer;
             answer = tolower(answer);
-
         }
 
         if (answer == 'c'){
@@ -100,7 +82,6 @@ Character Menu::createCharacter() {
                 for(int j = 0; j < w.getAvailableItems().size(); j++){
                     options.append(std::to_string(j+1));
                 }
-
 
                 while (checkIfCorrectInput(options, answer)== false) {
                     cout << "Please choose correct option!" << endl;
@@ -124,7 +105,90 @@ Character Menu::createCharacter() {
 
         }
         else if (answer == 'f'){
-            cout << "Opponents to fight are : 0" << endl;
+            cout << "Choose your weapon. Available weapons: " <<endl;
+            //int k = 2;
+
+            for(int i =0; i < (ch.getInventory().weapons.size()); i++){
+                cout << i+1 << ". " << ch.getInventory().weapons[i].getName() << " - damage: " << endl ;
+            }
+            cout << "To quit - insert 'q' and press enter"<< endl;
+            cin >> answer ;
+            answer = tolower(answer);
+            string options1 = "q";
+
+            for(int g = 0; g < ch.getInventory().weapons.size(); g++){
+                options1.append(std::to_string(g+1));
+            }
+
+            while (checkIfCorrectInput(options1, answer)== false) {
+                cout << "Please choose correct option!" << endl;
+                cin >> answer;
+                answer = tolower(answer);
+            }
+
+            if (answer=='q'){
+                finish = true;
+            }
+            else{
+                int number = answer - '0';
+                cout << "You have chosen: " << ch.getInventory().weapons[number-1].getName() << endl;
+                cout << w.getMonstersInWorld().size() << endl;
+                if ((w.getMonstersInWorld().size()) > 0){
+                    cout << "Choose a monster you want fight with. Available monsters: " << endl;
+                    for (int i = 0; i < (w.getMonstersInWorld().size()); i++){
+                        cout << i+1 << ". " << w.getMonstersInWorld()[i].getName() << endl ; //dodaj obrazenie
+                    }
+                    cout << "To quit - insert 'q' and press enter"<< endl;
+                    cin >> answer ;
+                    answer = tolower(answer);
+                    string options = "q";
+                    for(int j = 0; j < w.getMonstersInWorld().size(); j++){
+                        options.append(std::to_string(j+1));
+                    }
+                    while (checkIfCorrectInput(options, answer)== false) {
+                        cout << "Please choose correct option!" << endl;
+                        cin >> answer;
+                        answer = tolower(answer);
+                    }
+                    if (answer=='q'){
+                        finish = true;
+                    }
+                    else{
+                        int nb = answer - '0';
+                        cout << "Your are fighting with: " << w.getMonstersInWorld()[nb-1].getName() <<endl;
+                        bool moveBack = false;
+                        while(moveBack == false) {
+                            cout << "Monster HP: " << w.getMonstersInWorld()[nb - 1].getHP() << "." << endl;
+                            cout << "To attack - insert 'a' and press enter." << endl
+                                 << "To move to menu insert 'z' and press enter" <<endl
+                                 << "To exit insert 'q' and press enter" << endl;
+                            cin >> answer;
+                            answer = tolower(answer);
+                            string options1 = "qaz";
+
+                            while (checkIfCorrectInput(options1, answer) == false) {
+                                cout << "Please choose correct option!" << endl;
+                                cin >> answer;
+                                answer = tolower(answer);
+                            }
+
+                            if (answer == 'q') {
+                                exit(0);
+                            } else if (answer == 'a') {
+                                Monster temp_mon = ch.attack(w.getMonstersInWorld()[nb - 1],
+                                                             ch.getInventory().weapons[number - 1]);
+                                w.updateMonsterInWorld(temp_mon, nb - 1);
+
+                            } else if (answer == 'z') {
+                                moveBack = true;
+                            }
+                        }
+                    }
+                }
+                else {
+                    cout << "No Monsters to fight" <<endl;
+                }
+            }
         }
         else if (answer == 'i'){
             if ((ch.getInventory().stock.size()) > 0){
@@ -141,9 +205,6 @@ Character Menu::createCharacter() {
         else if (answer == 'q'){
             exit(0);
         }
-
-
-        //result;
         return result(ch, w);
     };
 
@@ -157,22 +218,13 @@ bool Menu::checkIfCorrectInput(string in, char an){
 };
 
 
-void Menu::setFinish(bool f){
-    Menu::finish = f;
-};
+
 
 bool Menu::getFinish(){
     return Menu::finish;
 };
 
- bool Menu::wantToQuit(char ch){
-    if (ch == 'q'){
-        return true;
-    }
-    else {
-        return false;
-    }
-}
+
 
 
 tuple<Character, World> Menu::result(Character characte, World worl){

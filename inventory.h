@@ -15,6 +15,7 @@ class Inventory{
 
 public:
     vector<Item> stock;
+    vector<Item> weapons;
 
 
     Inventory();
