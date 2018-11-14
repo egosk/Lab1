@@ -284,6 +284,33 @@ monster.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/monster.cpp.s
 .PHONY : monster.cpp.s
 
+test.obj: test.cpp.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab1.dir\build.make CMakeFiles/Lab1.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 world.obj: world.cpp.obj
 
 .PHONY : world.obj
@@ -338,6 +365,9 @@ help:
 	@echo ... monster.obj
 	@echo ... monster.i
 	@echo ... monster.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 	@echo ... world.obj
 	@echo ... world.i
 	@echo ... world.s

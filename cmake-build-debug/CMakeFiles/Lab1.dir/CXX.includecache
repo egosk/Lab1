@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/emila/Desktop/Projects/Lab1/monster.cpp
-monster.h
-C:/Users/emila/Desktop/Projects/Lab1/monster.h
+C:/Users/emila/Desktop/Projects/Lab1/item.h
+iostream
+-
 
 C:/Users/emila/Desktop/Projects/Lab1/monster.h
 iostream
 -
+
+C:/Users/emila/Desktop/Projects/Lab1/world.cpp
+world.h
+C:/Users/emila/Desktop/Projects/Lab1/world.h
+
+C:/Users/emila/Desktop/Projects/Lab1/world.h
+iostream
+-
+vector
+-
+item.h
+C:/Users/emila/Desktop/Projects/Lab1/item.h
+monster.h
+C:/Users/emila/Desktop/Projects/Lab1/monster.h
 

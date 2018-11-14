@@ -15,7 +15,7 @@ Character::Character(string nm, int health){
   name = nm;
   hp = health;
   isAlive = true;
-    strength = 10;
+  strength = 10;
 };
 
 void Character::setIsAlive(bool alive){
@@ -51,16 +51,21 @@ Inventory Character::getInventory(){
 
 Monster Character::attack(Monster mon, Item weapon) {
     if (weapon.getType() == "coldsteel"){
-        //mon.getDamage(weapon.getAttack());
         mon.setHP(mon.getHP()- weapon.getAttack());
-
-        //mon.getDamage(10);
         getDamage(mon.getStrength());
-        cout << "in attack function. hp after attack "<< mon.getHP() <<endl;
+        if (Character::getHP()<=0){
+            Character::setIsAlive(false);
+        }
+        if (mon.getHP()<=0){
+            mon.setIsAlive(false);
+        }
         return mon;
     }
     else if(weapon.getType() == "firearm"){
-        mon.getDamage(weapon.getAttack());
+        mon.setHP(mon.getHP()- weapon.getAttack());
+        if (mon.getHP()<=0){
+            mon.setIsAlive(false);
+        }
         return mon;
     }
 
@@ -68,7 +73,6 @@ Monster Character::attack(Monster mon, Item weapon) {
 
 void Character::getDamage(int damage) {
     Character::setHP(Character::getHP()- damage);
-
 };
 
 

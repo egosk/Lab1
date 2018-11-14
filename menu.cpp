@@ -177,7 +177,20 @@ Character Menu::createCharacter() {
                             } else if (answer == 'a') {
                                 Monster temp_mon = ch.attack(w.getMonstersInWorld()[nb - 1],
                                                              ch.getInventory().weapons[number - 1]);
-                                w.updateMonsterInWorld(temp_mon, nb - 1);
+
+                                if(ch.getIsAlive()== true) {
+                                    if (temp_mon.getIsAlive() == true) {
+                                        w.updateMonsterInWorld(temp_mon, nb - 1);
+                                    } else {
+                                        cout << "You have killed: " << temp_mon.getName() << endl;
+                                        w.deleteMonster(nb - 1);
+                                    }
+
+                                }
+                                else{
+                                    cout << "You have been killed" << endl;
+                                    exit(0);
+                                }
 
                             } else if (answer == 'z') {
                                 moveBack = true;

@@ -28,10 +28,11 @@ void Monster::setStrength(int strength) {
 
 
 Monster::Monster(string nm, int HP, int strength, int x_pos, int y_pos){
+    Monster::isAlive=true;
     Monster::name=nm;
     Monster::HP = HP;
     Monster::strength = strength;
-  
+
 }
 
 const string &Monster::getName() const {
@@ -45,3 +46,10 @@ void Monster::setName(const string &name) {
 void  Monster::getDamage(int damage) {
     Monster::setHP(Monster::getHP()- damage);
 }
+
+void Monster::setIsAlive(bool alive){
+    isAlive = alive;
+};
+bool Monster::getIsAlive(){
+    return isAlive;
+};

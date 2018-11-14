@@ -25,5 +25,7 @@ public:
     void updateMonsterInWorld(Monster mon1, int k);
 
     Item pickItem( int k);
+
+    void deleteMonster(int k);
 };
 #endif //LAB1_WORLD_H

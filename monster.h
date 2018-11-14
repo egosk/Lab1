@@ -11,6 +11,7 @@ class Monster{
     string name;
     int HP;
     int strength;
+    bool isAlive;
 
 public:
     const string &getName() const;
@@ -26,6 +27,9 @@ public:
     void setStrength(int strength);
 
     void getDamage(int damage);
+
+    void setIsAlive(bool alive);
+    bool getIsAlive();
 };
 
 #endif //LAB1_MONSTER_H

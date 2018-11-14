@@ -20,6 +20,7 @@ CMakeFiles/Lab1.dir/main.cpp.obj: ../item.h
 CMakeFiles/Lab1.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Lab1.dir/main.cpp.obj: ../menu.h
 CMakeFiles/Lab1.dir/main.cpp.obj: ../monster.h
+CMakeFiles/Lab1.dir/main.cpp.obj: ../test.h
 CMakeFiles/Lab1.dir/main.cpp.obj: ../world.h
 
 CMakeFiles/Lab1.dir/menu.cpp.obj: ../character.h
@@ -32,6 +33,15 @@ CMakeFiles/Lab1.dir/menu.cpp.obj: ../world.h
 
 CMakeFiles/Lab1.dir/monster.cpp.obj: ../monster.cpp
 CMakeFiles/Lab1.dir/monster.cpp.obj: ../monster.h
+
+CMakeFiles/Lab1.dir/test.cpp.obj: ../character.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../inventory.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../item.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../menu.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../monster.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../test.cpp
+CMakeFiles/Lab1.dir/test.cpp.obj: ../test.h
+CMakeFiles/Lab1.dir/test.cpp.obj: ../world.h
 
 CMakeFiles/Lab1.dir/world.cpp.obj: ../item.h
 CMakeFiles/Lab1.dir/world.cpp.obj: ../monster.h
