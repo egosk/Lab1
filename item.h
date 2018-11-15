@@ -1,5 +1,6 @@
 //
 // Created by emila on 11/2/2018.
+// Class item - models one item which character can collect
 //
 #include <iostream>
 using namespace std;
@@ -13,12 +14,10 @@ class Item {
     int weight;
     bool isWeapon;
     int attack;
+
 public:
     int getAttack() const;
-
     void setAttack(int attack);
-
-public:
     Item(string n, string t, int w, bool isWeapon, int attack);
     bool getIsWeapon() const;
     void setIsWeapon(bool isWeapon);

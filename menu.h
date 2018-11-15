@@ -1,5 +1,6 @@
 //
 // Created by emila on 11/3/2018.
+// menu class - interface to test features
 //
 
 #include <iostream>
@@ -14,6 +15,7 @@ using namespace std;
 
 class Menu{
     bool finish  = false;
+
 
 public:
     tuple<Character, World> result(Character characte, World worl);

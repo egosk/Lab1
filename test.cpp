@@ -21,10 +21,10 @@ void Test::test() {
     Character *character1 = new Character("Example1", 20);
     cout << "Character was created for you. " << endl << "Name: " << character1->getName() << endl ;
     cout << "HP: " << character1->getHP() << endl << "Is alive? " << character1->getIsAlive() << endl;
-    if ((character1->getInventory().stock.size()) > 0){
+    if ((character1->getInventory().getStock().size()) > 0){
         cout << "Items in your inventory: " << endl;
-        for (int i = 0; i < (character1->getInventory().stock.size()); i++){
-            cout << i+1 << ". " << character1->getInventory().stock[i].getName() << endl ;
+        for (int i = 0; i < (character1->getInventory().getStock().size()); i++){
+            cout << i+1 << ". " << character1->getInventory().getStock()[i].getName() << endl ;
         }
     }
     else {
@@ -67,10 +67,10 @@ void Test::test() {
     }
 
     //inventory after picking up some things
-    if ((character1->getInventory().stock.size()) > 0){
+    if ((character1->getInventory().getStock().size()) > 0){
         cout << "Items in your inventory: " << endl;
-        for (int i = 0; i < (character1->getInventory().stock.size()); i++){
-            cout << i+1 << ". " << character1->getInventory().stock[i].getName() << endl ;
+        for (int i = 0; i < (character1->getInventory().getStock().size()); i++){
+            cout << i+1 << ". " << character1->getInventory().getStock()[i].getName() << endl ;
         }
     }
     else {
@@ -100,7 +100,7 @@ void Test::test() {
 
     while (wo->getMonstersInWorld()[1].getIsAlive() == true) {
         Monster temp_mon = character1->attack(wo->getMonstersInWorld()[1],
-                                              character1->getInventory().weapons[2]);
+                                              character1->getInventory().getWeapons()[2]);
         wo->updateMonsterInWorld(temp_mon, 1);
         cout << "Monster's HP: " <<temp_mon.getHP() << endl;
         cout << "Character's HP: " << character1->getHP() <<endl;
@@ -136,7 +136,7 @@ void Test::test() {
 
     while (wo->getMonstersInWorld()[1].getIsAlive() == true) {
         Monster temp_mon = character1->attack(wo->getMonstersInWorld()[1],
-                                              character1->getInventory().weapons[1]);
+                                              character1->getInventory().getWeapons()[1]);
         wo->updateMonsterInWorld(temp_mon, 1);
         cout << "Monster's HP: " <<temp_mon.getHP() << endl;
         cout << "Character's HP: " << character1->getHP() <<endl;

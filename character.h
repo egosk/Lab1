@@ -1,5 +1,8 @@
 //
 // Created by emila on 11/1/2018.
+// Class character - main class in excercise1
+//character described with parameters
+// can fight with monsters and collect items
 //
 #include <iostream>
 #include "inventory.h"
@@ -13,7 +16,7 @@ using namespace std;
 
 class Character{
 private:
-    int hp = 100; //nie wolno tu wartosci
+    int hp ;
     string name;
     bool isAlive;
     Inventory inv;
@@ -34,7 +37,6 @@ public:
     void setName(string nm);
     string getName();
 
-    void printHP();
 
     void addToInventory(Item it);
     Inventory getInventory();

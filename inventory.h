@@ -1,5 +1,6 @@
 //
 // Created by emila on 11/2/2018.
+// Inventory class- contains vector of items collected by character
 //
 #include <iostream>
 #include "item.h"
@@ -12,10 +13,17 @@ using namespace std;
 
 class Inventory{
     int maxCapacity;
-
-public:
     vector<Item> stock;
     vector<Item> weapons;
+
+public:
+     vector<Item> getStock() ;
+
+    void setStock(const vector<Item> &stock);
+
+     vector<Item> getWeapons() ;
+
+    void setWeapons(const vector<Item> &weapons);
 
 
     Inventory();

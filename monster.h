@@ -1,5 +1,6 @@
 //
 // Created by emila on 11/12/2018.
+// monster class - character can fight with monsters
 //
 #include <iostream>
 using namespace std;

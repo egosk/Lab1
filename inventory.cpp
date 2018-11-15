@@ -30,6 +30,22 @@ void Inventory::addItem(Item i){
     if (i.getIsWeapon() == true){
         weapons.push_back(i);
     }
+}
+
+ vector<Item> Inventory::getStock()  {
+    return stock;
+}
+
+void Inventory::setStock(const vector<Item> &stock) {
+    Inventory::stock = stock;
+}
+
+vector<Item> Inventory::getWeapons()  {
+    return weapons;
+}
+
+void Inventory::setWeapons(const vector<Item> &weapons) {
+    Inventory::weapons = weapons;
 };
 
 

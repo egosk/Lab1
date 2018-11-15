@@ -108,15 +108,15 @@ Character Menu::createCharacter() {
             cout << "Choose your weapon. Available weapons: " <<endl;
             //int k = 2;
 
-            for(int i =0; i < (ch.getInventory().weapons.size()); i++){
-                cout << i+1 << ". " << ch.getInventory().weapons[i].getName() << " - damage: " << endl ;
+            for(int i =0; i < (ch.getInventory().getWeapons().size()); i++){
+                cout << i+1 << ". " << ch.getInventory().getWeapons()[i].getName()  << endl ;
             }
             cout << "To quit - insert 'q' and press enter"<< endl;
             cin >> answer ;
             answer = tolower(answer);
             string options1 = "q";
 
-            for(int g = 0; g < ch.getInventory().weapons.size(); g++){
+            for(int g = 0; g < ch.getInventory().getWeapons().size(); g++){
                 options1.append(std::to_string(g+1));
             }
 
@@ -131,7 +131,7 @@ Character Menu::createCharacter() {
             }
             else{
                 int number = answer - '0';
-                cout << "You have chosen: " << ch.getInventory().weapons[number-1].getName() << endl;
+                cout << "You have chosen: " << ch.getInventory().getWeapons()[number-1].getName() << endl;
                 cout << w.getMonstersInWorld().size() << endl;
                 if ((w.getMonstersInWorld().size()) > 0){
                     cout << "Choose a monster you want fight with. Available monsters: " << endl;
@@ -176,7 +176,7 @@ Character Menu::createCharacter() {
                                 exit(0);
                             } else if (answer == 'a') {
                                 Monster temp_mon = ch.attack(w.getMonstersInWorld()[nb - 1],
-                                                             ch.getInventory().weapons[number - 1]);
+                                                             ch.getInventory().getWeapons()[number - 1]);
 
                                 if(ch.getIsAlive()== true) {
                                     if (temp_mon.getIsAlive() == true) {
@@ -184,6 +184,7 @@ Character Menu::createCharacter() {
                                     } else {
                                         cout << "You have killed: " << temp_mon.getName() << endl;
                                         w.deleteMonster(nb - 1);
+                                        moveBack = true;
                                     }
 
                                 }
@@ -204,10 +205,10 @@ Character Menu::createCharacter() {
             }
         }
         else if (answer == 'i'){
-            if ((ch.getInventory().stock.size()) > 0){
+            if ((ch.getInventory().getStock().size()) > 0){
                 cout << "Items in your inventory: " << endl;
-                for (int i = 0; i < (ch.getInventory().stock.size()); i++){
-                    cout << i+1 << ". " << ch.getInventory().stock[i].getName() << endl ;
+                for (int i = 0; i < (ch.getInventory().getStock().size()); i++){
+                    cout << i+1 << ". " << ch.getInventory().getStock()[i].getName() << endl ;
                 }
             }
             else {
